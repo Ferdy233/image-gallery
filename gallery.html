@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Dogbey Ferdinald">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Gallery</h1>
+    </header>
+    
+    <main>
+        <section class="gallery-container" id="galleryContainer">
+            <!-- Thumbnails will dynamically added -->
+        </section>
+        
+        <!-- Lightbox for the  full-size images -->
+        <aside class="lightbox" id="lightbox" role="dialog" aria-labelledby="lightboxCaption" aria-hidden="true">
+            <button class="close" id="closeButton" aria-label="Close lightbox">&times;</button>
+            <img class="lightbox-image" id="lightboxImage" src="" alt="">
+            <p class="lightbox-caption" id="lightboxCaption"></p>
+            <nav class="lightbox-navigation">
+                <button id="prevButton" class="nav-button" aria-label="Previous image">«</button>
+                <button id="nextButton" class="nav-button" aria-label="Next image">»</button>
+            </nav>       
+        </aside>
+    </main>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
